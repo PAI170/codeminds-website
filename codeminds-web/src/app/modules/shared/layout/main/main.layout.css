@@ -1,0 +1,43 @@
+/* Inicio Estilo Navbar */
+
+header {
+    max-width: 100%;
+    background-color: var(--title-color);
+}
+
+nav {
+    max-width: 1600px;
+    display: flex;
+    background-color: var(--title-color);
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu-content {
+    align-self: center;
+}
+
+.links-content {
+    display: flex;
+    font-size: 1.6rem;
+    gap: 20px;
+    align-items: center;
+}
+
+.links-content a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-text);
+    font-weight: 200;
+}
+
+.portal-btn {
+    background-color: var(--color-blue);
+    border-style: none;
+    font-family: var(--font-text);
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 3px;
+    padding: .3em 1em;
+}
