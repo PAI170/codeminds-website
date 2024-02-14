@@ -7,6 +7,7 @@ header {
 
 nav {
     max-width: 1600px;
+    margin: 0 auto;
     display: flex;
     background-color: var(--title-color);
     justify-content: space-between;
@@ -40,4 +41,50 @@ nav {
     color: white;
     border-radius: 3px;
     padding: .3em 1em;
+}
+/* Fin Estilo Navbar */
+
+/* Inicio Estilo Footer */
+
+footer {
+    max-width: 100%;
+    background-color: var(--title-color);
+}
+
+.footer-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1080px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-info a, .contact-info span {
+    font-size: 1.6rem;
+    font-family: 'Poppis', Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+.all-rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins', Helvetica, sans-sefir;
+    color: white;
+    font-weight: 200;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.all-rights span {
+    font-size: 1.6rem;
 }
