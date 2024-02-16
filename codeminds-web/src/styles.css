@@ -1,5 +1,6 @@
 @import './assets/css/theme.css';
 @import './assets/css/reset.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
 body {
     line-height: 1.2;

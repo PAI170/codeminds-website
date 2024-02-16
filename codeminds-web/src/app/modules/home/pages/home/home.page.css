@@ -133,3 +133,53 @@
     color: white;
     cursor: pointer;
 }
+
+.referral {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    width: 80%;
+}
+
+.referral .divider {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 30%;
+}
+
+.referral p {
+    font-size: 2rem;
+    font-family: var(--font-text);
+    font-weight: 400;
+    width: 40%;
+    line-height: 1.8em;
+    margin-bottom: 20px;
+
+}
+
+.referral button {
+    margin-top: 50px;
+    padding: .7em .7em .7em .7em;
+    border-radius: 3px;
+    background-color: var(--color-blue);
+    border-style: none;
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: white;
+    cursor: pointer;
+}
+/*FIN DISEÑO WHY CODEMINDS*/
+
+/*INICIO DISEÑO TESTIMONIAL*/
+.testimonials-content {
+    margin: 0 auto;
+    max-width: 1600px;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.testimonials-content .divider {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 20%;
+}
