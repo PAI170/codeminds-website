@@ -9,6 +9,7 @@ body {
     background-position: left top 100px;
     background-size: 40% auto;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
 }
 
@@ -16,12 +17,15 @@ h1 {
     font-family: var(--font-title);
     font-size: 5.3rem;
     color: var(--title-color);
+    font-weight: 500;
+    padding-bottom: 1.5rem;
 }
 
 h2 {
     font-family: var(--font-title);
     color: var(--title-color);
     font-size: 3.5rem;
+    font-weight: 500;
 }
 h3 {
     font-size: 2.6rem;

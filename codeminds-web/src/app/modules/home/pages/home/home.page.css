@@ -1,0 +1,135 @@
+/*INICIO DISEÑO TITULO*/
+.main-content {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 10.29rem;
+}
+
+.title-content {
+    display: flex;
+    gap: 40px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.title-content h3{
+    color: var(--color-blue);
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.title-content span {
+    font-size: 2.5rem;
+    color: var(--color-green);
+    font-family: var(--font-title);
+    font-weight: 600;
+}
+
+.title-content p {
+    font-size: 2rem;
+    font-family: var(--font-text);
+    line-height: 1.8em;
+    font-weight: 400;
+}
+/*FIN DISEÑO TITULO*/
+
+/*INICIO DISEÑO BE A CODEMIND*/
+.be-a-codemind {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    padding-bottom: 55px;
+}
+
+.be-a-codemind-img h2{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.be-a-codemind-img .divider {
+    margin-bottom: 40px;
+    width: 90%;
+}
+.be-a-codemind-text {
+    font-size: 2rem;
+    font-family: var(--font-text);
+    font-weight: 400;
+    align-self: flex-end;
+    line-height: 1.8em;
+    width: 40%;
+}
+
+.be-a-codemind-text button {
+    margin-top: 50px;
+    padding: .7em .7em .7em .7em;
+    border-radius: 3px;
+    background-color: var(--color-blue);
+    border-style: none;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: white;
+    cursor: pointer;
+}
+/*FIN DISEÑO BE A CODEMIND*/
+
+/*INICIO DISEÑO TOGGLE SECTION*/
+.toggle-section {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.toggle-content {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.toggle-content h3 {
+    color: var(--color-blue);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+/*FIN DISEÑO TOGGLE SECTION*/
+
+/*INICIO DISEÑO WHY CODEMINDS*/
+.why-codeminds{
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.why-codeminds p {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--font-text);
+    line-height: 1.8em;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.why-codeminds .divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:20%;
+}
+
+.why-codeminds button {
+    margin-top: 50px;
+    padding: .7em .7em .7em .7em;
+    border-radius: 3px;
+    background-color: var(--color-blue);
+    border-style: none;
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: white;
+    cursor: pointer;
+}
