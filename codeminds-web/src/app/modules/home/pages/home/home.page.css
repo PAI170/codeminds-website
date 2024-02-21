@@ -96,7 +96,52 @@
     color: var(--color-blue);
     font-size: 1.8rem;
     font-weight: 500;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
+
+.fundamentos-content, .aprendizaje-content, .maestria-content {
+    width: 285px;
+}
+
+.open-toggle {
+    height: 100%;
+    opacity: 1;
+    animation: fadeIn 1s ease;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: var(--font-text);
+    text-align: center;
+}
+
+.closed-toggle {
+    height: 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: var(--font-text);
+    text-align: center;
+    animation: fadeOut 1s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    }
+    
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
 /*FIN DISEÑO TOGGLE SECTION*/
 
 /*INICIO DISEÑO WHY CODEMINDS*/

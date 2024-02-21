@@ -25,20 +25,35 @@
             </div>
         </div>
         <div class="toggle-section">
-            <ul class="toggle-content">
-                <li class="fundamentos">
-                    <img src="assets/img/fundamentos.png" alt="Imagen de fundamentos">
-                    <h3>FUNDAMENTOS</h3>
-                </li>
-                <li class="aprendizaje">
-                    <img src="assets/img/aprendizaje.png" alt="Imagen de Aprendizaje">
-                    <h3>APRENDIZAJE</h3>
-                </li>
-                <li class="maestria">
-                    <img src="assets/img/maestria.png" alt="Imagen de Maestria">
-                    <h3>MAESTRIA</h3>
-                </li>
-            </ul>
+            <div class="toggle-content">
+                <div class="fundamentos-content">
+                    <div class="fundamentos">
+                        <img src="assets/img/fundamentos.png" alt="Imagen de fundamentos">
+                        <h3 (click)="toggle()">FUNDAMENTOS</h3>
+                        <span [ngClass]="{'closed-toggle' : !isOpen, 'open-toggle' : isOpen}" >
+                            Capacitamos a nuestros estudiantes con las bases y conocimientos más fundamentales para comenzar en el mundo del desarrollo.
+                        </span>
+                    </div>
+                </div>
+                <div class="aprendizaje-content">
+                    <div class="aprendizaje">
+                        <img src="assets/img/aprendizaje.png" alt="Imagen de Aprendizaje">
+                        <h3 (click)="toggle()">APRENDIZAJE</h3>
+                        <span [ngClass]="{'closed-toggle' : !isOpen, 'open-toggle' : isOpen}" >
+                            Nuestra metodología se centra en incentivar la sed de conocimiento y disfrutar el reto del aprendizaje, no en medir por medio de notas.
+                        </span>
+                    </div>
+                </div>
+                <div class="maestria-content">
+                    <div class="maestria">
+                        <img src="assets/img/maestria.png" alt="Imagen de Maestria">
+                        <h3 (click)="toggle()">MAESTRIA</h3>
+                        <span [ngClass]="{'closed-toggle' : !isOpen, 'open-toggle' : isOpen}" >
+                            Nuestro proceso busca emular las condiciones reales del mercado para ayudar al estudiante a dominar los temas de manera experta y convertirse en un profesional líder en la industria del software.
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="why-codeminds">
             <h2>¿POR QUÉ CODE MINDS?</h2>
@@ -60,14 +75,25 @@
             <h2>Testimonios</h2>
             <div class="divider"></div>
             <div class="carrousel-content">
-                <div class="carousel-item">
-                    <img src="..." alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>David Rodriguez</h5>
-                      <p>“Gracias a Code Minds pude aumentar mi conocimiento logrando así conseguir un trabajo de Full Stack, es una academia única donde enseñan lo más revelante y necesario para crecer como desarrollador.“
-                    </p>
-                    </div>
-                  </div>
+                <c-carousel>
+                    <c-carousel-indicators></c-carousel-indicators>
+                    <c-carousel-inner>
+                      <c-carousel-item *ngFor="let slide of slides">
+                        <img
+                          alt="{{slide.title}}"
+                          class="d-block w-100"
+                          loading="lazy"
+                          src="{{slide.src}}"
+                        />
+                        <c-carousel-caption class="d-none d-md-block">
+                          <h3>{{slide.title}}</h3>
+                          <p>{{slide.subtitle}}</p>
+                        </c-carousel-caption>
+                      </c-carousel-item>
+                    </c-carousel-inner>
+                    <c-carousel-control [routerLink] caption="Previous" direction="prev"></c-carousel-control>
+                    <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control>
+                  </c-carousel>
             </div>
         </div>
     </div>

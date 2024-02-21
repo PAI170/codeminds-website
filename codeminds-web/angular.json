@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "codeminds-web:build:production"
+              "buildTarget": "codeminds-web:build:production"
             },
             "development": {
-              "browserTarget": "codeminds-web:build:development"
+              "buildTarget": "codeminds-web:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "codeminds-web:build"
+            "buildTarget": "codeminds-web:build"
           }
         },
         "test": {

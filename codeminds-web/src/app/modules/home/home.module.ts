@@ -4,6 +4,7 @@ import { HomePage } from './pages/home/home.page';
 import { SharedModule } from '@shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { CursosComponent } from './pages/cursos/cursos.component';
+import { CarouselModule } from '@coreui/angular';
 
 
 
@@ -15,7 +16,8 @@ import { CursosComponent } from './pages/cursos/cursos.component';
   imports: [
     SharedModule,
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    CarouselModule
   ]
 })
-export class HomeModule { }
+export class HomeModule {}
