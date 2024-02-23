@@ -87,9 +87,9 @@
 .toggle-content {
     display: flex;
     justify-content: center;
-    gap: 250px;
+    gap: 100px;
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 50x;
 }
 
 .toggle-content h3 {
@@ -101,23 +101,23 @@
 }
 
 .fundamentos-content, .aprendizaje-content, .maestria-content {
-    width: 285px;
+    width: 320px;
 }
 
 .open-toggle {
     height: 100%;
     opacity: 1;
     animation: fadeIn 1s ease;
-    font-size: 1.8rem;
-    font-weight: 400;
+    font-size: 1.6rem;
+    font-weight: 300;
     font-family: var(--font-text);
     text-align: center;
 }
 
 .closed-toggle {
     height: 0;
-    font-size: 1.8rem;
-    font-weight: 400;
+    font-size: 1.6rem;
+    font-weight: 300;
     font-family: var(--font-text);
     text-align: center;
     animation: fadeOut 1s ease;
@@ -220,6 +220,7 @@
     margin: 0 auto;
     max-width: 1600px;
     width: 80%;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 

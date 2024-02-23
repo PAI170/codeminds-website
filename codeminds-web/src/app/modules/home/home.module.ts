@@ -4,8 +4,6 @@ import { HomePage } from './pages/home/home.page';
 import { SharedModule } from '@shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { CursosComponent } from './pages/cursos/cursos.component';
-import { CarouselModule } from '@coreui/angular';
-
 
 
 @NgModule({
@@ -16,8 +14,7 @@ import { CarouselModule } from '@coreui/angular';
   imports: [
     SharedModule,
     CommonModule,
-    HomeRoutingModule,
-    CarouselModule
+    HomeRoutingModule
   ]
 })
 export class HomeModule {}

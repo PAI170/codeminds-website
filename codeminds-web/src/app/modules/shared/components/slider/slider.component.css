@@ -1,0 +1,43 @@
+.slider-wrap {
+  background-color: #33a9e0;
+  width: 1080px;
+  height: 129px;
+  border-radius: 90px;
+}
+
+.slider-content {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 5px 20px 0px;
+}
+
+.slider-content h4 {
+  font-family: var(--font-title);
+  font-size: 1.9rem;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.slider-content p {
+  font-family: var(--font-text);
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: left;
+  color: white;
+}
+
+.arrow {
+  align-self: center;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.slider-content:hover .arrow[data-direction="left"], .slider-content:hover .arrow[data-direction="right"] {
+  visibility: visible;
+}
+
+.david {
+  margin-left: 30px;
+}

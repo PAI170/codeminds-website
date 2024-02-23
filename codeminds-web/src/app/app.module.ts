@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SharedModule } from '@shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CarouselModule } from '@coreui/angular';
 
 @NgModule({
   declarations: [
@@ -12,8 +11,7 @@ import { CarouselModule } from '@coreui/angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule,
-    CarouselModule
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
